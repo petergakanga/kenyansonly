@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Contact Us - KENYANSONLY | Premium Insects & Biologicals</title>
+    <meta name="title" content="Contact Us - KENYANSONLY | Premium Insects & Biologicals">
+    <meta name="description" content="Get in touch with KENYANSONLY. We're here to answer your questions about insects, biologicals, and help with your orders. Contact us via phone, email, or WhatsApp.">
+    <meta name="keywords" content="contact KENYANSONLY, customer service, insect supplier contact, Kenya insects contact">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="KENYANSONLY">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kenyansonly.com/contact.html">
+    <meta property="og:title" content="Contact Us - KENYANSONLY">
+    <meta property="og:description" content="Get in touch with KENYANSONLY for any questions about insects or biological products.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1200&h=630&fit=crop">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Contact Us - KENYANSONLY">
+    <meta property="twitter:description" content="Get in touch with KENYANSONLY for any questions.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://kenyansonly.com/contact.html">
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .contact-hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .contact-hero p {
+            font-size: 1.2em;
+            color: var(--secondary-color);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .contact-content {
+            padding: 60px 0;
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin: 40px 0;
+        }
+
+        @media (max-width: 768px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .info-block {
+            display: flex;
+            gap: 20px;
+        }
+
+        .info-icon {
+            font-size: 2em;
+            color: var(--secondary-color);
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-light);
+            border-radius: 8px;
+        }
+
+        .info-content h3 {
+            margin: 0 0 10px 0;
+            color: var(--primary-color);
+        }
+
+        .info-content p {
+            margin: 0;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .info-content a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .info-content a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-form {
+            background: var(--bg-light);
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .contact-form h2 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 1em;
+            font-family: inherit;
+            resize: vertical;
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .form-button {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 14px 30px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .form-button:hover {
+            background-color: #c9a633;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+        }
+
+        .form-button:focus {
+            outline: 2px solid var(--secondary-color);
+            outline-offset: 2px;
+        }
+
+        .success-message {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            border: 1px solid #c3e6cb;
+            display: none;
+        }
+
+        .error-message {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            border: 1px solid #f5c6cb;
+            display: none;
+        }
+
+        .faq-section {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            margin: 60px 0;
+            border: 1px solid var(--border-color);
+        }
+
+        .faq-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--primary-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        .faq-question:hover {
+            color: var(--secondary-color);
+        }
+
+        .faq-toggle {
+            font-size: 1.3em;
+            transition: transform 0.3s;
+        }
+
+        .faq-toggle.active {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            color: var(--text-light);
+            margin-top: 10px;
+            display: none;
+            line-height: 1.6;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        .business-hours {
+            background: linear-gradient(135deg, var(--secondary-color), #d4a629);
+            color: var(--primary-color);
+            padding: 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .business-hours h3 {
+            margin-top: 0;
+        }
+
+        .hours-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hours-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .hour-item {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .response-time {
+            background: var(--bg-light);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .response-time strong {
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Hire Me Banner -->
+    <div class="hire-banner">
+        <div class="hire-banner-content">
+            <span class="hire-text">💼 Looking for a Web Developer?</span>
+            <a href="https://wa.me/254118174145?text=Hi%2C%20I%20am%20interested%20in%20your%20web%20development%20services" target="_blank" class="hire-link">Hire Me</a>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><span class="logo-text">KENYANSONLY</span></a>
+            </div>
+            <nav id="primary-nav" class="nav-menu">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#shop" class="nav-link">Shop</a>
+                <a href="collections.html" class="nav-link">Collections</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+            <div class="nav-icons">
+                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-controls="primary-nav" aria-expanded="false">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <button id="search-btn" class="icon-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button id="cart-btn" class="icon-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span id="cart-count" class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Search Modal -->
+        <div id="search-modal">
+            <input type="text" id="search-input" placeholder="Search for luxury items..." class="search-input">
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We're here to help! Get in touch with any questions about our products or services</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content" class="contact-page">
+        <div class="container">
+            <section class="contact-content">
+                <!-- Contact Wrapper -->
+                <div class="contact-wrapper">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <h2>Get In Touch</h2>
+                        
+                        <div class="info-block">
+                            <div class="info-icon">📍</div>
+                            <div class="info-content">
+                                <h3>Address</h3>
+                                <p>Nairobi, Kenya</p>
+                                <p>Serving customers nationwide with fast delivery</p>
+                            </div>
+                        </div>
+
+                        <div class="info-block">
+                            <div class="info-icon">📞</div>
+                            <div class="info-content">
+                                <h3>Phone</h3>
+                                <p><a href="tel:+254118174145">+254 118 174145</a></p>
+                                <p>Available for calls and WhatsApp</p>
+                            </div>
+                        </div>
+
+                        <div class="info-block">
+                            <div class="info-icon">💬</div>
+                            <div class="info-content">
+                                <h3>WhatsApp</h3>
+                                <p><a href="https://wa.me/254118174145?text=Hi%20KENYANSONLY%2C%20I%20have%20a%20question" target="_blank">Start Chat on WhatsApp</a></p>
+                                <p>Quick response for urgent inquiries</p>
+                            </div>
+                        </div>
+
+                        <div class="info-block">
+                            <div class="info-icon">📧</div>
+                            <div class="info-content">
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@kenyansonly.com">info@kenyansonly.com</a></p>
+                                <p>For detailed inquiries and partnerships</p>
+                            </div>
+                        </div>
+
+                        <div class="info-block">
+                            <div class="info-icon">🕐</div>
+                            <div class="info-content">
+                                <h3>Business Hours</h3>
+                                <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</p>
+                                <p><strong>Saturday:</strong> 10:00 AM - 4:00 PM</p>
+                                <p><strong>Sunday:</strong> Closed (WhatsApp available)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Business Hours and Response Time -->
+                <div class="business-hours">
+                    <h3>📋 Our Commitment to You</h3>
+                    <p>We value your inquiry and aim to respond as quickly as possible:</p>
+                    <div class="hours-grid">
+                        <div class="hour-item">
+                            <span><strong>WhatsApp Inquiries:</strong></span>
+                            <span>Response within 2-4 hours</span>
+                        </div>
+                        <div class="hour-item">
+                            <span><strong>Email:</strong></span>
+                            <span>Response within 24 hours</span>
+                        </div>
+                        <div class="hour-item">
+                            <span><strong>Phone Calls:</strong></span>
+                            <span>During business hours</span>
+                        </div>
+                        <div class="hour-item">
+                            <span><strong>Product Orders:</strong></span>
+                            <span>Processing within 24 hours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Response Time Info -->
+                <div class="response-time">
+                    <strong>💡 Pro Tip:</strong> For the quickest response, use WhatsApp! We're usually online and can assist you immediately.
+                </div>
+
+                <!-- FAQ Section -->
+                <section class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>How long do insects take to arrive after ordering?</span>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Most orders are processed and shipped within 24 hours. Delivery time depends on your location, typically taking 1-3 days for Nairobi and 2-5 days for other regions in Kenya. Express shipping is available for urgent orders.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Are your insects healthy and guaranteed?</span>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! All insects undergo strict health checks and quality assessment before being shipped. We guarantee 99% survival rate if handled properly. If there are any issues upon arrival, contact us within 24 hours for replacement.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Do you provide care instructions and support?</span>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! Every order includes care guidelines specific to your insects. Our expert team is available via WhatsApp to answer care questions and provide ongoing support. We want your collection to thrive!</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Can you handle bulk orders or custom requirements?</span>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! We specialize in bulk orders for schools, research facilities, and businesses. For bulk inquiries or custom requirements, contact us directly via WhatsApp or email. We offer special pricing and customized solutions.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What's your return or refund policy?</span>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>If insects arrive in poor condition or with issues, we provide full refund or replacement within 48 hours. Live insects are sensitive to conditions, so immediately report any problems with photos for quick resolution.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Do you provide expert consultations for new keepers?</span>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! We offer free consultation sessions for beginners. Whether you're starting your first ant colony or setting up a honeybee hive, our experts can guide you through the process. Contact us via WhatsApp to schedule.</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <!-- Shopping Cart -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="cart-close">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <!-- Cart items will be loaded here -->
+        </div>
+        <div class="cart-summary">
+            <div class="summary-row">
+                <span>Subtotal:</span>
+                <span id="subtotal">$0.00</span>
+            </div>
+            <div class="summary-row">
+                <span>Shipping:</span>
+                <span id="shipping">$0.00</span>
+            </div>
+            <div class="summary-row total">
+                <span>Total:</span>
+                <span id="total">$0.00</span>
+            </div>
+            <button class="btn btn-primary full-width" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div id="cart-overlay" class="overlay hidden"></div>
+
+    <!-- Footer -->
+    <footer class="footer" itemscope itemtype="https://schema.org/LocalBusiness">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 itemprop="name">KENYANSONLY</h3>
+                <p itemprop="description">Quality Products for Every Kenyan.</p>
+                <link itemprop="url" href="https://kenyansonly.com">
+            </div>
+            <nav class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#shop">Shop</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://instagram.com/kenyansonly" rel="me">Instagram</a>
+                    <a href="https://twitter.com/kenyansonly" rel="me">Twitter</a>
+                    <a href="https://facebook.com/kenyansonly" rel="me">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 KENYANSONLY. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // FAQ Toggle Functionality
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const toggle = element.querySelector('.faq-toggle');
+            
+            answer.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+
+        // Contact Form Handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value.trim();
+            
+            const successMsg = document.getElementById('successMessage');
+            const errorMsg = document.getElementById('errorMessage');
+            
+            // Reset messages
+            successMsg.style.display = 'none';
+            errorMsg.style.display = 'none';
+            
+            // Validate
+            if (!name || !email || !phone || !subject || !message) {
+                errorMsg.style.display = 'block';
+                return;
+            }
+            
+            // Simple email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                errorMsg.style.display = 'block';
+                return;
+            }
+            
+            // In a real application, you would send this data to a server
+            // For now, we'll just show success
+            console.log('Form submitted:', { name, email, phone, subject, message });
+            
+            // Show success message
+            successMsg.style.display = 'block';
+            
+            // Reset form
+            this.reset();
+            
+            // Reset message after 5 seconds
+            setTimeout(() => {
+                successMsg.style.display = 'none';
+            }, 5000);
+            
+            // Alternative: Send to WhatsApp
+            const whatsappMessage = `Hello! I'm ${name}. ${message}. Please contact me at ${phone}.`;
+            console.log('You could also send to WhatsApp with this message:', whatsappMessage);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+# Robots.txt for KENYANSONLY
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /private
+Disallow: /cart
+Disallow: /checkout
+
+# Crawl delay to be respectful to server
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://kenyansonly.com/sitemap.xml
+
+# Specific rules for popular bots
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
